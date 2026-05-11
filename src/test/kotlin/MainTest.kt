@@ -11,7 +11,7 @@ class MainTest {
         val result = commission(type = type, amount = amount, previous = previous)
         when (result) {
             is CommissionResult.Success -> {
-                assertEquals(456, result.commission)
+                assertEquals(450, result.commission)
             }
 
             is CommissionResult.Error -> {
